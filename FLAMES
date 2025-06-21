@@ -14,7 +14,7 @@ for i in range (len(b)):
     if(b2[i]!='2'):
         c=c+1
 for j in range(len(g)):
-    if(g2[i]=='2'):
+    if(g2[j]=='2'):
         c=c+1
 l=['F','L','A','M','E','S']
 z=0
