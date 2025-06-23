@@ -1,0 +1,12 @@
+S=["ANU","RAJ","RAM","SAM","AN/I","BALU","ROSE","BEN","TOM","ROY"]
+M=[[22,33,90],[45,77,29],[89,87,12],[35,65,29],[55,44,33],[66,22,8],[88,22,13],[99,27,56],[77,38,56],[68,63,69]]
+A=[False,False,True,False,False,False,True,False,False,True]
+c=0
+for i in range(len(S)):
+    if(A[i]==False):
+        
+        total=sum(M[i])
+        percent=total/3
+        if (percent>40):
+           c=c+1
+           print("{}.{},{}%".format(c,S[i],percent))
