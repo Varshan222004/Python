@@ -1,0 +1,4 @@
+a=["gill","pant","ben","bumrah"]
+for i,j in enumerate(a,start=10):
+    print(i,j)
+        
