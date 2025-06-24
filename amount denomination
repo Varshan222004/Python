@@ -1,0 +1,11 @@
+a=int(input("enter the amount in rupees:"))
+d=[500,200,100,50,20,10,5,2,1]
+s={}
+for i in d:
+    if a>=i:
+        
+        count=a//i
+        s[i]=count
+        a-=count*i
+print(s)
+    
