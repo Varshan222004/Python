@@ -4,9 +4,9 @@ ht=21
 at=0
 mi=0
 while(at!=ht):
-    mi=mi+21
+    mi=mi+1
     if(mi%2==0):
         at=at-y
     else:
-        at=at+y
+        at=at+x
 print(mi)
