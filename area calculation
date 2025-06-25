@@ -1,0 +1,38 @@
+def circle():
+    c=int(input("enter the radius:"))
+    area=3.14*c**2
+    print("area of the circle is:",area)
+def square():
+    area=a**2
+    print("area of square is:",area)
+def rect():
+    l = int(input("Enter the length of the rectangle: "))
+    b = int(input("Enter the breadth of the rectangle: "))
+    area = l * b
+    return area
+def triangle():
+    b = int(input("Enter the base of the triangle: "))
+    h = int(input("Enter the height of the triangle: "))
+    area = 0.5 * b * h
+    return area
+while(True):
+    print("1.CIRCLE")
+    print("2.SQUARE")
+    print("3.RECTANGLE")
+    print("4.TRIANGLE")
+    ch=int(input("Enter tour choice:"))
+    match ch:
+        case 1:
+            circle()
+        case 2:
+            a=int(input("enter the len:"))
+            sq(a)
+        case 3:
+            res=rect()
+            print("the area of rectangle is:",res)
+        case 4:
+            res1=triangle(l,b)
+            print("the area of triangle is :,res1")
+        case 5:
+            print("Exiting the program.")
+            break
