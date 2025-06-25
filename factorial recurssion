@@ -1,0 +1,8 @@
+def factor(n):
+    if(n==1):
+        return n
+    else:
+        return n*factor(n-1)
+n=int(input("enter the number:"))
+b=factor(n)
+print(b)
