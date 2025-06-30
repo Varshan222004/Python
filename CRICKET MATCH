@@ -1,0 +1,22 @@
+import random
+
+n = int(input("Enter number of teams: "))
+teams = []
+print("Enter team names:")
+for i in range(n):
+    teams.append(input(f"Team {i+1}: "))
+
+meet = int(input("Enter number of meetings between each pair of teams: "))
+
+matches = []
+for i in range(n):
+    for j in range(i + 1, n):
+        for _ in range(meet):
+            matches.append([teams[i], teams[j]])
+
+random.shuffle(matches)
+
+match_no = 1
+for match in matches:
+    print(f"Match no[{match_no}]: {match[0]} vs {match[1]}")
+    match_no += 1
